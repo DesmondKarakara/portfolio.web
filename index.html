@@ -1,218 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devdipro Bhaduri - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devdipro Bhaduri - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
-    <!-- Decorative Icons -->
-    <i class="fas fa-cog decorative-icon gear-1"></i>
-    <i class="fas fa-cog decorative-icon gear-2"></i>
-    <i class="fas fa-cog decorative-icon gear-3"></i>
-    <i class="fas fa-cog decorative-icon gear-4"></i>
-    <i class="fas fa-cog decorative-icon gear-5"></i>
-    <!-- Add these with your existing decorative icons -->
-    <i class="fas fa-cog decorative-icon gear-6"></i>
-    <i class="fas fa-cog decorative-icon gear-7"></i>
-    <i class="fas fa-cog decorative-icon gear-8"></i>
-    <i class="fas fa-pencil-alt decorative-icon pencil-1"></i>
-    <i class="fas fa-pencil-alt decorative-icon pencil-2"></i>
-    <i class="fas fa-pen decorative-icon pen-1"></i>
-    <i class="fas fa-pen decorative-icon pen-2"></i>
-    <i class="fas fa-screwdriver decorative-icon screwdriver-1"></i>
-    <i class="fas fa-screwdriver decorative-icon screwdriver-2"></i>
-    <i class="fas fa-wrench decorative-icon wrench-1"></i>
-    <i class="fas fa-wrench decorative-icon wrench-2"></i>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="background-image"></div>
-        <div class="container">
-            <div class="profile-image"></div>
-            <h1>Devdipro Bhaduri</h1>
-            <p class="tagline">Electronics & Computer Science Student</p>
+<!-- Top Navigation -->
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="brand">
+      <a href="#hero">Devdipro Bhaduri</a>
+    </div>
+
+    <button id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#internships">Internships</a>
+      <a href="#projects">Projects</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Decorative Icons -->
+<i class="fas fa-cog decorative-icon gear-1" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-2" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-3" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-4" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-5" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-6" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-7" aria-hidden="true"></i>
+<i class="fas fa-cog decorative-icon gear-8" aria-hidden="true"></i>
+
+<!-- Hero -->
+<section id="hero" class="hero">
+  <div class="background-image" role="img" aria-label="Profile background"></div>
+  <div class="container hero-content">
+    <div class="profile-image" aria-hidden="true"></div>
+    <h1>Devdipro Bhaduri</h1>
+    <p class="tagline">
+      Electronics & Computer Science Student — Narula Institute of Technology (2023–27)
+    </p>
+    <div class="hero-cta">
+      <a class="btn" href="#internships">View Internships</a>
+      <a class="btn btn-outline" href="#projects">Explore Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm pursuing B.Tech in Electronics & Computer Science at Narula Institute of Technology (2023–27),
+      with interests spanning front-end development, data analytics, machine learning, and
+      LLM-assisted data analysis for real-world applications.
+    </p>
+  </div>
+</section>
+
+<!-- Internships -->
+<section id="internships" class="section">
+  <div class="container">
+    <h2>Internships (Chronology)</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="year">15 Jul 2025 — 16 Aug 2025</div>
+        <div class="content">
+          <h3>AI & Data Analytics (Green Skills)</h3>
+          <p><strong>Organizers:</strong> AICTE · Shell India Markets Pvt. Ltd. · Edunet Foundation</p>
+          <p>
+            <strong>Deliverable:</strong> Smart Irrigation ML model, Streamlit demo application,
+            and technical PPT. Focused on data preprocessing, model training,
+            serialization, and demo deployment.
+          </p>
         </div>
-    </header>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm pursuing B.Tech in Electronics & Computer Science at Narula Institute of Technology (2023–27), eager to learn new skills and tackle challenging projects.</p>
+      <div class="timeline-item">
+        <div class="year">21 Aug 2025 — 30 Sep 2025</div>
+        <div class="content">
+          <h3>Front-End Web Development</h3>
+          <p><strong>Organizers:</strong> AICTE · Edunet Foundation</p>
+          <p>
+            <strong>Deliverable:</strong> Responsive personal portfolio website (this site),
+            focusing on responsive layout, accessibility, and UI/UX best practices.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <!-- Academics Section -->
-    <section id="academics" class="section">
-        <div class="container">
-            <h2>Academics</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="year">2023-27</div>
-                    <div class="content">
-                        <h3>B.Tech Electronics & Computer Science</h3>
-                        <p>Narula Institute of Technology</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">2023-25</div>
-                    <div class="content">
-                        <p>Active in project and paper submissions, both on-campus and beyond</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="year">2011-23</div>
-                    <div class="content">
-                        <h3>Primar, Secondary and Higher Secondary Education</h3>
-                        <p>Patha Bhavan</p>
-                    </div>
-                </div>
-            </div>
+      <div class="timeline-item">
+        <div class="year">11 Sep 2025 — 08 Oct 2025</div>
+        <div class="content">
+          <h3>Conversational Data Analysis with LLMs (VOIS)</h3>
+          <p><strong>Organizers:</strong> AICTE · Vodafone Idea Foundation (VOIS) · Edunet Foundation</p>
+          <p>
+            <strong>Deliverable:</strong> Airbnb NYC and Netflix analytics,
+            LLM-assisted narrative generation, and presentation decks.
+            Focused on EDA, visualization, and prompt engineering.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Floral Interventions</h3>
-                    <span class="role">Solo</span>
-                    <p>Catalyzing Green and Sustainable Restoration in Environmental Conservation</p>
-                    <p class="project-description">As my first solo project, it provided valuable experience in managing mini-scale project workflows, from initial research to paper publication. The project analyzed four key soil parameters for optimal plantation, using the Semipalatinsk Test Site as a case study.</p>
-                </div>
+    </div>
+  </div>
+</section>
 
-                <div class="project-card">
-                    <h3>Aqua-Amica</h3>
-                    <span class="role">Team</span>
-                    <p>Automatic Water Cleaning Bot</p>
-                    <p class="project-description">This pioneering team project was presented at multiple competitions, providing invaluable experience in competitive environments. We developed an innovative surface water bot that combines both sorting and cleaning capabilities.</p>
-                </div>
+<!-- Projects (PPT LINKS HERE) -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
 
-                <div class="project-card">
-                    <h3>Automatic Plant Watering Bot</h3>
-                    <span class="role">Team</span>
-                    <p class="project-description">Collaborated with team members to develop an IoT-based irrigation system using soil moisture sensors and solenoid valves, integrated with the Blynk platform for automated plant care.</p>
-                </div>
+    <div class="projects-grid">
 
-                <div class="project-card">
-                    <h3>KYA</h3>
-                    <span class="role">Team</span>
-                    <p class="project-description">Developed a dedicated software platform to facilitate meaningful connections between alumni and current students, enhancing networking opportunities within the academic community.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Biodiversity Drone</h3>
-                    <span class="role">Team</span>
-                    <p class="project-description">Addressing the technological gap in Indian forestry, we're developing an advanced drone system utilizing image processing for comprehensive flora and fauna surveillance. Project is currently in active development.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Disaster Drone</h3>
-                    <span class="role">Team</span>
-                    <p class="project-description">Developing an advanced drone system for rapid disaster response and large-scale crowd management. Currently enhancing image processing capabilities for improved effectiveness in emergency situations.</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Length and Weight Measuring System</h3>
-                    <span class="role">Solo</span>
-                    <p class="project-description">Designed an integrated measurement system to streamline the innovation process by providing accurate length and weight measurements in a single, efficient platform.</p>
-                </div>
-            </div>
+      <!-- Smart Irrigation -->
+      <article class="project-card" aria-labelledby="p1-title">
+        <h3 id="p1-title">Smart Irrigation System</h3>
+        <span class="role">AI & Data Analytics Internship</span>
+        <p class="project-description">
+          ML-based irrigation decision system using soil & environmental sensor data.
+          Trained and serialized a classifier, integrated into a Streamlit demo for
+          stakeholder testing. A technical presentation deck was prepared to explain
+          system architecture, data pipeline, and results.
+        </p>
+        <div class="project-links">
+          <a class="btn-small"
+             href="https://github.com/DesmondKarakara/AICTE_smart_irrigation_dev"
+             target="_blank" rel="noopener">Repo</a>
+          <a class="btn-small btn-outline"
+             href="assets/PPT_smart_irrigation_dev.pptx"
+             target="_blank">PPT</a>
         </div>
-    </section>
+      </article>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <span class="skill-name">C</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 40%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Python</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 60%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">HTML</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 60%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">CSS</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 40%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Data Structure and Algorithm</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 20%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">SQL</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 20%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Microsoft Word</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Microsoft PowerPoint</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 50%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Java</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 40%"></div>
-                    </div>
-                </div>
-            </div>
+      <!-- LLM Conversational Analysis -->
+      <article class="project-card" aria-labelledby="p2-title">
+        <h3 id="p2-title">Conversational Data Analysis with LLMs</h3>
+        <span class="role">VOIS Internship</span>
+        <p class="project-description">
+          End-to-end exploratory data analysis on Airbnb NYC and Netflix datasets.
+          Large Language Models were used to generate executive summaries,
+          conversational insights, and action-oriented recommendations supported
+          by data visualizations.
+        </p>
+        <div class="project-links">
+          <a class="btn-small"
+             href="https://github.com/DesmondKarakara/VOIS_AICTE_Oct2025_DevdiproBhaduri"
+             target="_blank" rel="noopener">Airbnb Repo</a>
+          <a class="btn-small"
+             href="assets/DevdiproBhaduri_Air BNB Hotel Booking Analysis Project PPT.pptx"
+             target="_blank">Airbnb PPT</a>
+          <a class="btn-small btn-outline"
+             href="assets/DevdiproBhaduri_Netflix Data Analysis Project PPT (6).pptx"
+             target="_blank">Netflix PPT</a>
         </div>
-    </section>
+      </article>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Devdipro Bhaduri. All rights reserved.</p>
-            <div class="footer-links">
-                <div class="contact-item">
-                    <a href="tel:+916289175634" class="contact-icon" title="Click to call"><i class="fas fa-phone"></i></a>
-                    <span class="contact-tooltip">+91 6289175634</span>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:devdiprobhaduri@gmail.com" class="contact-icon" title="Click to email"><i class="fas fa-envelope"></i></a>
-                    <span class="contact-tooltip">devdiprobhaduri@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <a href="https://www.linkedin.com/in/devdipro-bhaduri-b1a3672ba" target="_blank" class="contact-icon" title="Visit LinkedIn Profile">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <span class="contact-tooltip">linkedin.com/in/devdipro-bhaduri-b1a3672ba</span>
-                </div>
-            </div>
+      <!-- Portfolio -->
+      <article class="project-card" aria-labelledby="p3-title">
+        <h3 id="p3-title">Portfolio Website (this site)</h3>
+        <span class="role">Front-End Internship</span>
+        <p class="project-description">
+          Designed and developed a responsive portfolio using HTML, CSS, and
+          vanilla JavaScript. Emphasis was placed on accessibility, performance
+          optimization, and clean UI/UX to present internship deliverables and
+          project documentation effectively.
+        </p>
+        <div class="project-links">
+          <a class="btn-small"
+             href="https://github.com/DesmondKarakara/portfolio.web"
+             target="_blank" rel="noopener">Repo</a>
         </div>
-    </footer>
+      </article>
 
-    <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-    <script src="script.js"></script>
+      <!-- Existing Projects (unchanged) -->
+      <article class="project-card">
+        <h3>Floral Interventions</h3>
+        <span class="role">Solo</span>
+        <p class="project-description">
+          Catalyzing green and sustainable restoration through soil parameter
+          analysis and a research paper submission based on the Semipalatinsk Test Site.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Aqua-Amica</h3>
+        <span class="role">Team</span>
+        <p class="project-description">
+          Automatic water surface cleaning robot integrating waste segregation
+          and collection, presented at technical competitions.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Automatic Plant Watering Bot</h3>
+        <span class="role">Team</span>
+        <p class="project-description">
+          IoT-based automated irrigation system using moisture sensors, solenoid
+          valves, and the Blynk platform for real-time monitoring.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Tech Stack -->
+<section id="tech-stack" class="section">
+  <div class="container">
+    <h2>Technical Stack</h2>
+    <ul class="tech-list">
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (vanilla)</li>
+      <li><strong>Data Analysis:</strong> Python, pandas, NumPy, matplotlib</li>
+      <li><strong>Machine Learning:</strong> scikit-learn, model serialization</li>
+      <li><strong>Applications:</strong> Streamlit, GitHub Pages</li>
+      <li><strong>LLMs:</strong> Prompt engineering & narrative verification</li>
+      <li><strong>Tools:</strong> Git, GitHub, Jupyter Notebooks</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-name">Python — Proficient</span></div>
+      <div class="skill-item"><span class="skill-name">HTML & CSS — Proficient</span></div>
+      <div class="skill-item"><span class="skill-name">JavaScript — Basic</span></div>
+      <div class="skill-item"><span class="skill-name">Machine Learning — Intermediate</span></div>
+      <div class="skill-item"><span class="skill-name">LLM Prompt Engineering — Intermediate</span></div>
+      <div class="skill-item"><span class="skill-name">Microsoft PowerPoint — Proficient</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="footer-links">
+      <div class="contact-item">
+        <a href="tel:+916289175634" class="contact-icon"><i class="fas fa-phone"></i></a>
+        <span class="contact-tooltip">+91 6289175634</span>
+      </div>
+      <div class="contact-item">
+        <a href="mailto:devdiprobhaduri@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+        <span class="contact-tooltip">devdiprobhaduri@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/devdipro-bhaduri-b1a3672ba"
+           target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+        <span class="contact-tooltip">https://www.linkedin.com/in/devdipro-bhaduri-b1a3672ba</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Devdipro Bhaduri. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
